@@ -1,4 +1,3 @@
-# Retro Bowl (🏈) Not 🚫 (Unblocked)
-# Link: 
+## Retro Bowl (🏈) Not 🚫 (Unblocked)
 
 Made By Josiah
