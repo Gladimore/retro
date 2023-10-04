@@ -1,2 +1,2 @@
-<h1>Retro Bowl (🏈) Not 🚫 (Unblocked)</h1>
-<h2>Made By Josiah</h2>
+<h1 align="center">Retro Bowl (🏈) Not 🚫 (Unblocked)</h1>
+<h2 align="center">Made By Josiah</h2>
