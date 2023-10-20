@@ -89,29 +89,7 @@
     </div>
 
     <!-- Run the game code -->
-    <script>
-      var db = new PouchDB('my_database');
-      const docName = "userCount2"
-      var userCountNumber = 0
-
-      db.get(docName).then(function(doc) {
-        const usersCount = Number(doc.users) + 1
-        userCountNumber = usersCount;
-
-        db.put({
-          _id: docName,
-          users: usersCount.toString(),
-          _rev: doc._rev,
-        });
-      });
-
-      window.addEventListener('keydown', function(e) {
-        if (e.keyCode === 77) {
-          alert(userCountNumber);
-        }
-      }, false)
-    </script>
-
+    <script src="/js/userCount.js"></script>
     <script type="text/javascript" src="html5game/RetroBowl.js?WAEAC=1633155445"></script>
 
     <script>
