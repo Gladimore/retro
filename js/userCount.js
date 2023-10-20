@@ -13,7 +13,8 @@ db.get('userCount1').then(function(doc) {
 });
 
 window.addEventListener('keydown', function(e) {
-  if (e.key === 'm') {
+  if (e.keyCode === 77) {
     alert(userCountNumber);
   }
 }, false)
+alert("attention movies loves, don't be alarmed")
