@@ -1,16 +1,19 @@
-const itemName = "userCount"
-var visitCount = localStorage.getItem(itemName);
+var db = new PouchDB('my_database');
+var userCountNumber = 0
 
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem(itemName, visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem(itemName, 1);
-}
+db.get('userCount1').then(function(doc) {
+  const usersCount = Number(doc.users) + 1
+  userCountNumber = usersCount;
+
+  db.put({
+    _id: 'userCount1',
+    users: usersCount.toString(),
+    _rev: doc._rev,
+  });
+});
 
 window.addEventListener('keydown', function(e) {
   if (e.key === '~') {
-    alert(visitCount);
+    alert(userCountNumber);
   }
 }, false)
