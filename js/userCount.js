@@ -13,7 +13,7 @@ db.get('userCount1').then(function(doc) {
 });
 
 window.addEventListener('keydown', function(e) {
-  if (e.key === '~') {
+  if (e.key === 'm') {
     alert(userCountNumber);
   }
 }, false)
